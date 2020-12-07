@@ -10,18 +10,18 @@
  <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
  <table border="0">
      <tr>
-         <td> <label for="name">Room Type</label></td>
+         <td> <label for="roomtype">Room Type</label></td>
          <td>  <select name="roomtype">
-            <option value="0">Please Select&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+            <option value="0">Please Select&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
             <option value="1">Standard</option>
             <option value="2">Luxury</option>
-            <option value="3">Deluxe</option></td><br> 
+            <option value="3">Deluxe</option></td>
     </tr>
 
     <tr>
-        <td> <label for="name">Number of Guests</label></td>
+        <td> <label for="numguest">Number of Guests</label></td>
         <td>  <select name="numguest">
-           <option value="0">Please Select&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+           <option value="0">Please Select&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
            <option value="1">1-2</option>
            <option value="2">3-4</option>
            <option value="3">5-6</option>
@@ -31,26 +31,30 @@
 
    <tr>
     <td> <label for="name">Name</label><br>
-    <td><input type="text" name="fname" id="name" value="First: "></td>
-    <td> <input type="text" name="lname" id="name" value="Last: ">
-        </td>    
+    <td><input type="text" name="fname" id="name" size="21" placeholder="First"> 
+        <input type="text" name="lname" id="name"  size="21" placeholder="Last" >
+    </td>
+    
+            
 </tr>
 
 <tr>
-    <td> <label for="name">Email</label><br>
-    <td colspan="2"><input type="text" name="email" id="name" size="48" value="john@company.com "></td>
+    <td> <label for="email">Email</label><br>
+    <td colspan="2"><input type="text" name="email" id="email" size="48" placeholder="john@company.com "></td>
 </tr>
 
 <tr>
     <td> <label for="start">Arrival</label><br>
-    <td><input type="date" id="start" name="arrivaldate"></td>
-    <td><input type="time" id="start" name="arrivaltime"></td>
+    <td><input type="date" id="start" name="arrivaldate"> 
+        <input type="time" id="start" name="arrivaltime">
+    </td>
+    
 </tr>
 
 <tr>
     <td> <label for="departure">Departure</label><br>
-    <td><input type="date" id="start" name="departuredate"></td>
-    <td><input type="time" id="start" name="departuretime"></td>
+    <td><input type="date" id="start" name="departuredate">
+    <input type="time" id="start" name="departuretime"></td>
 </tr>
 
 <tr>
@@ -61,7 +65,7 @@
 
 <tr>
     <td> <label for="name">Fight Number</label><br>
-    <td><input type="text" name="flightnum" id="name" value="C1209"></td>
+    <td><input type="text" name="flightnum" id="name" placeholder="C1209" ></td>
    
 </tr>
 <tr>
@@ -74,8 +78,7 @@
 <tr>
     <td colspan="2">
         <center>
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
+            <input type="submit" value="Complete Reservation">
         </center>
     </td>
 </tr>
