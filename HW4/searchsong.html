@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Searchsong</title>
+    <script>
+        function search(){
+            //let bb = localStorage.key(0); เทสๆ
+            train = localStorage.getItem("testJSON");
+            obj = JSON.parse(train);
+            document.getElementById("show").innerHTML += obj.name+",";
+            document.getElementById("show2").innerHTML += obj.lname+",";
+            document.getElementById("show3").innerHTML += obj.song+",";
+            
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="a1">
+    <center>
+        <h2>ค้นหาเพลง<a href="addsong.html">[เพิ่มเพลงที่ต้องการ]</a></h2>
+        <input type="text" placeholder="ใส่ชื่อเพลงที่ต้องการค้นหา" id="song">
+        <button onclick="search()" class="btn btn-outline-success">search</button><br><br>
+        ชื่อเพลง:<div id="show"></div><br>
+        ชื่อนักร้อง:<div id="show2"></div><br>
+        เนื้อเพลง:<div id="show3"></div><br>
+    </center>
+</div>
+</body>
+<footer>
+    <style>
+        .a1 {
+    margin: auto;
+    width: 25%;
+    border: 2px solid black;
+    background:rgb(44, 255, 227);
+    padding: 10px;
+}
+
+#a2 {
+    margin: auto;
+    width: 40%;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: auto;}
+
+
+* {box-sizing:border-box}
+</style>
+</footer>
+</html>
