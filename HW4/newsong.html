@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>ค้นหาเพลง</title>
+    <title>เพิ่มเพลงใหม่</title>
     
 </head>
 <body>
@@ -28,7 +28,6 @@
 
     </div>
         <br>
-        
         <div style="text-align:center">
           <span class="dot"></span> 
           <span class="dot"></span> 
@@ -36,16 +35,19 @@
         </div>
         
     <div class="a1">
-        <h2>ค้นหาเพลง [<a href="/HW4/newsong.html">เพิ่มเพลงใหม่</a>]</h2>
-        <form class="form-inline" onsubmit="return search();" autocomplete="off"></form>
-    <input type="text" class="form-control" placeholder="ชื่อเพลง" id="search">
-    <button onclick="search();" class="button button3">ค้นหา</button>
-    </form>
-    <div id="disp"></div>
+        <h2>เพิ่มเพลงใหม่ [<a href="/HW4/searchsong.html">ค้นหาเพลง</a>]</h2>
+        <form class="form-inline" onsubmit="return addsong();" autocomplete="off"></form>
+        <input type="text" class="form-control" placeholder="ชื่อเพลง" id="addsong"><br>
+        <input type="text" class="form-control" placeholder="ศิลปิน" id="artist"><br>
+        <textarea class="form-control" id="lyrics" placeholder="เนื้อเพลง" cols="30" rows="10"></textarea><br>
+        <button onclick="addsong();" class="button button1">Save</button>
+        <button class="button button3" type="reset" value="reset" onclick="Clearform()">Clear Form</button>
+        </form>
+        
     </div>
-      
+
 <script src="js/slide.js"></script>
-<script src="js/searchsong.js"></script>
+<script src="js/addsong.js"></script>
     
     
 </body>
